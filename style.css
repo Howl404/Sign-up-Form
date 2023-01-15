@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input,
+label {
+  display: block;
+}
+
+@font-face {
+  font-family: Norse-Bold;
+  src: url(Norse-Bold.otf);
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 33% 67%;
+  height: 100vh;
+  width: 100%;
+}
+
+.left {
+  background-image: url("images/background.avif");
+  position: relative;
+}
+
+.odin {
+  height: 9rem;
+  width: 100%;
+  top: 13.5rem;
+  background-color: rgba(0, 0, 0, 0.466);
+  color: white;
+  padding: 0.5rem 0 0.5rem 0;
+  margin-top: 35.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.odin p {
+  display: inline-block;
+  font-size: 6rem;
+  font-family: "Norse-Bold";
+}
+
+.odin img {
+  height: 100%;
+}
+
+/* Right side */
+.first {
+  padding: 15% 15% 4% 3%;
+  text-align: start;
+  font-size: 1.5rem;
+  background-color: #e5e7eb;
+}
+
+.second {
+  font-size: 1.5rem;
+}
+
+.second p {
+  padding: 1rem 2rem 0 3%;
+}
+
+.third {
+  font-size: 1.2rem;
+  background-color: #e5e7eb;
+  padding: 2.5rem 0 17% 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 22rem 16rem;
+  grid-template-rows: repeat(3, 4rem);
+  padding: 1rem 2rem 1rem 3%;
+}
+
+input {
+  width: 16rem;
+  height: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding-left: 10px;
+  font-size: 0.9rem;
+}
+
+label {
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+}
+
+button {
+  background-color: #596d48;
+  height: 3.5rem;
+  width: 13rem;
+  margin-left: 3%;
+  border-radius: 6px;
+
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  box-shadow: 1px 1px 1px grey;
+}
+
+input:focus {
+  outline: none;
+  border: 1.5px outset blue;
+  box-shadow: 1px 1px 1px grey;
+}
+
+#error-message {
+  font-size: 0.8rem;
+  color: red;
+  padding: 0;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+a {
+  text-decoration: none;
+  color: #596d48;
+}
+
+a:hover {
+  color: Black;
+}
+
+button:hover {
+  background-color: #e5e7eb;
+  border: 1px solid #596d48;
+  color: black;
+}

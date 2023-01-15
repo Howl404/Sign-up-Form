@@ -7,5 +7,79 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="main-grid">
+      <div class="left">
+        <div class="odin">
+          <img src="/images/odin-lined.png" alt="" />
+          <p>Odin</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="first">
+          <p>
+            This is not a real online service! You know you need something
+            <br />
+            like this in your life to help you realize your deepest dreams.<br />Sign
+            up now to get started.
+          </p>
+          <br />
+          <p>You know you want to.</p>
+        </div>
+        <div class="second">
+          <p>Let's do this!</p>
+          <div>
+            <form action="/" method="post">
+              <div class="grid">
+                <div>
+                  <label for="firstName">FIRST NAME</label>
+                  <input type="text" id="firstName" name="firstName" required />
+                </div>
+                <div>
+                  <label for="lastName">LAST NAME</label>
+                  <input type="text" id="lastName" name="lastName" required />
+                </div>
+                <div>
+                  <label for="email">EMAIL</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div>
+                  <label for="phone">PHONE NUMBER</label>
+                  <input type="phone" id="phone" name="phone" required />
+                </div>
+                <div class="error2">
+                  <label for="password1">PASSWORD</label
+                  ><input
+                    type="password"
+                    id="password1"
+                    name="password1"
+                    class="error"
+                    onkeyup="check();"
+                    required
+                  />
+                  <p id="error-message">* Passwords do not match</p>
+                </div>
+                <div>
+                  <label for="password2">CONFIRM PASSWORD</label
+                  ><input
+                    type="password"
+                    id="password2"
+                    name="password2"
+                    class="error"
+                    onkeyup="check();"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="third">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="#"> Log in</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
