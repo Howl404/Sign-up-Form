@@ -50,15 +50,23 @@ label {
 }
 
 /* Right side */
+.right {
+  background-color: #f8faff;
+}
+
 .first {
   padding: 15% 15% 4% 3%;
   text-align: start;
   font-size: 1.5rem;
-  background-color: #e5e7eb;
 }
 
 .second {
   font-size: 1.5rem;
+}
+
+.second .white {
+  padding: 1rem 2rem 0 3%;
+  background-color: white;
 }
 
 .second p {
@@ -67,15 +75,18 @@ label {
 
 .third {
   font-size: 1.2rem;
-  background-color: #e5e7eb;
-  padding: 2.5rem 0 17% 0;
+
+  padding: 2.5rem 0 0 0;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 22rem 16rem;
-  grid-template-rows: repeat(3, 4rem);
+  grid-template-columns: 16rem 16rem;
+  grid-template-rows: 2rem 2rem 4rem;
+  row-gap: 2rem;
+  column-gap: 2rem;
   padding: 1rem 2rem 1rem 3%;
+  background-color: white;
 }
 
 input {
@@ -83,7 +94,6 @@ input {
   height: 1.5rem;
   border: 1px solid #e5e7eb;
   border-radius: 4px;
-  padding-left: 10px;
   font-size: 0.9rem;
 }
 
