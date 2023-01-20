@@ -95,6 +95,7 @@ input {
   border: 1px solid #e5e7eb;
   border-radius: 4px;
   font-size: 0.9rem;
+  padding-left: 1rem;
 }
 
 label {
@@ -112,13 +113,14 @@ button {
   color: white;
   font-size: 1.1rem;
   border: none;
-  box-shadow: 1px 1px 1px grey;
+  box-shadow: 1px 1px 7px #666666;
+  cursor: pointer;
 }
 
 input:focus {
   outline: none;
   border: 1.5px outset blue;
-  box-shadow: 1px 1px 1px grey;
+  box-shadow: 1px 1px 7px #666666;
 }
 
 #error-message {
